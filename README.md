@@ -6,4 +6,4 @@ Using index.html you can Display Webcam feed in Picture-in-Picture mode LIVE/loc
 
 <pre><code> curl https://raw.githubusercontent.com/efxtv/PIP-html-live-camera/main/index.html >index.html 
  sudo npm install live-server -g
- live server</code></pre>
+ live-server</code></pre>
