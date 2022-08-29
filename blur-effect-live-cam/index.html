@@ -42,8 +42,8 @@
                   <canvas hidden id="canvas"></canvas>
                 </center>
                 <div class="card-body">
-                  <h5 class="card-title">Video Stream</h5>
-                  <p class="card-text">Start and Stop to play the live video stream. Toggle between blur and unblur to blur the background in the stream</p>
+                  <h5 class="card-title">EFX Tv</h5>
+                  
                   <div class="justify-content-between align-items-center">
                     <div class="btn-group btn-group-sm">
                       <button id="start-btn" type="button" class="btn btn-sm btn-outline-success">Start</button>
@@ -160,9 +160,9 @@ async function perform(net) {
   while (startBtn.disabled && blurBtn.hidden) {
     const segmentation = await net.segmentPerson(video);
  
-    const backgroundBlurAmount = 26;
+    const backgroundBlurAmount = 5;
     const edgeBlurAmount = 2;
-    const flipHorizontal = false;
+    const flipHorizontal = true;
  
     bodyPix.drawBokehEffect(
       canvas, videoElement, segmentation, backgroundBlurAmount,
